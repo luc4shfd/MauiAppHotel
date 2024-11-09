@@ -13,7 +13,7 @@
         <Label Text="Cálculo da Diária"
                FontFamily="Kalam"
                FontSize="50"
-               TextColor="{StaticResource quarta}" />
+               TextColor="{StaticResource Primary}" />
 
         <Frame Padding="10">
             <VerticalStackLayout>
@@ -24,7 +24,7 @@
                            Text="Adultos:" />
 
                     <Label Grid.Row="0" Grid.Column="1"
-                           TextColor="{StaticResource quinta}"
+                           TextColor="{StaticResource Primary}"
                            Text="{Binding Value}"
                            BindingContext="{x:Reference stp_adultos}"/>
 
@@ -38,7 +38,7 @@
                            Text="Crianças:" />
 
                     <Label Grid.Row="1" Grid.Column="1"
-                           TextColor="{StaticResource quinta}"
+                           TextColor="{StaticResource Primary}"
                            Text="{Binding Value}"
                            BindingContext="{x:Reference stp_criancas}"/>
 
@@ -55,11 +55,10 @@
                         <Label Text="Escolha sua Suíte"
                                TextTransform="Uppercase"
                                FontSize="Subtitle"
-                               TextColor="{StaticResource quinta}"/>
+                               TextColor="{StaticResource Primary}"/>
 
                         <Picker x:Name="pck_quarto"
-                                Title="Selecione sua Acomodação"
-                                ItemDisplayBinding="{Binding Descricao}"/>
+                                Title="Selecione sua Acomodação" />
                     </VerticalStackLayout>
                 </Frame>
 
@@ -70,12 +69,11 @@
                         <Label Text="Período da Estadia"
                                TextTransform="Uppercase"
                                FontSize="Subtitle"
-                               TextColor="{StaticResource quinta}"/>
+                               TextColor="{StaticResource Primary}"/>
 
                         <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
                             <Label Text="Check-in:" />
                             <DatePicker x:Name="dtpck_checkin"
-                                        DateSelected="dtpck_checkin_DateSelected"
                                         Format="dd/MM/yyyy" />
                         </HorizontalStackLayout>
 
@@ -87,9 +85,10 @@
                     </VerticalStackLayout>
                 </Frame>
 
-                <Button Text="Avançar" Clicked="Button_Clicked" Margin="10"  />
-                
-                <Button Text="Sobre o Desenvolvedor" Clicked="Button_Clicked_1" Margin="10"  />
+                <Button Text="Avançar" Margin="5"  />
+
+                <Button Text="Sobre o Desenvolvedor" Margin="5"
+                        />
 
             </VerticalStackLayout>
         </Frame>
